@@ -1,7 +1,4 @@
-import 'hardhat-typechain'
-import '@nomiclabs/hardhat-ethers'
-import '@nomiclabs/hardhat-waffle'
-import '@nomiclabs/hardhat-etherscan'
+
 
 export default {
   networks: {
@@ -12,28 +9,7 @@ export default {
       url: `https://mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`,
     },
     sepolia: {
-      url: process.env.HTTPS_PROVIDER,
-    },
-    arbitrumRinkeby: {
-      url: `https://arbitrum-rinkeby.infura.io/v3/${process.env.INFURA_API_KEY}`,
-    },
-    arbitrum: {
-      url: `https://arbitrum-mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`,
-    },
-    optimismKovan: {
-      url: `https://optimism-kovan.infura.io/v3/${process.env.INFURA_API_KEY}`,
-    },
-    optimism: {
-      url: `https://optimism-mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`,
-    },
-    mumbai: {
-      url: `https://polygon-mumbai.infura.io/v3/${process.env.INFURA_API_KEY}`,
-    },
-    polygon: {
-      url: `https://polygon-mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`,
-    },
-    bnb: {
-      url: `https://bsc-dataseed.binance.org/`,
+      url: process.env.HTTPS_PROVIDER || 'https://eth-sepolia.g.alchemy.com/v2/0PISwk2ZJQ4XJt4-OHdq5ACx_jmnGzxX',
     },
   },
   etherscan: {
