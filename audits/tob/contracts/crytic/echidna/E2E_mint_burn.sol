@@ -1,4 +1,4 @@
-pragma solidity =0.7.6;
+pragma solidity =0.8.19;
 pragma abicoder v2;
 
 import './Setup.sol';
